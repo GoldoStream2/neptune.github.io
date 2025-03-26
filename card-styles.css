@@ -1,0 +1,115 @@
+/* Card styles for better visibility and contrast */
+.feature-card, .script-card, .testimonial-card, .pricing-card {
+    background-color: rgba(42, 42, 42, 0.95) !important; 
+    border: 1px solid rgba(0, 195, 255, 0.5) !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8) !important; 
+    transition: all 0.3s ease;
+    color: #ffffff !important; 
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    backdrop-filter: blur(5px); 
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.feature-card:hover, .script-card:hover, .testimonial-card:hover, .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 195, 255, 0.4) !important; 
+    border-color: var(--primary) !important;
+}
+
+.feature-icon {
+    background: rgba(18, 18, 18, 0.9) !important; 
+    color: var(--primary) !important;
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    border: 2px solid var(--primary) !important; 
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.6) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Tag styles enhancement */
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: inline-block !important;
+}
+
+.premium {
+    background-color: var(--primary) !important;
+    color: #000 !important;
+    text-shadow: none !important; 
+}
+
+.free {
+    background-color: var(--success) !important;
+    color: #000 !important;
+    text-shadow: none !important; 
+}
+
+/* Enhanced text visibility for all cards */
+.feature-card h3, .script-card h3, .testimonial-card h3, .pricing-card h3 {
+    color: var(--primary) !important;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0, 195, 255, 0.3);
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.feature-card p, .script-card p, .testimonial-card p, .pricing-card p, 
+.pricing-features li {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Force visibility on sections */
+.features, .scripts, .executor, .testimonials, .pricing, .faq, .contact {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.section-header {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+    text-align: center !important;
+}
+
+.section-header h2, .section-header p {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Force testimonial cards to show */
+.testimonial-card {
+    min-width: 300px !important;
+    flex: 1 !important;
+    margin: 0 1rem !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.testimonial-avatar {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: flex !important;
+}

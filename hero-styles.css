@@ -1,0 +1,101 @@
+/* Hero section styles */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.hero-content {
+    text-align: center !important;
+    max-width: 800px !important;
+    padding: 3rem !important; 
+    z-index: 10 !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 90% !important; 
+    background-color: rgba(18, 18, 18, 0.7) !important; 
+    border-radius: 15px !important;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7) !important; 
+    backdrop-filter: blur(10px) !important; 
+    border: 1px solid rgba(0, 195, 255, 0.3) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.hero-content h1 {
+    margin-bottom: 1.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: var(--text-shadow);
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-align: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Add button specific styling */
+.cta-button, .discord-btn {
+    display: inline-block !important;
+    color: white !important;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 1 !important; 
+    visibility: visible !important; 
+}
+
+.cta-button {
+    background: var(--gradient) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 195, 255, 0.7) !important; 
+    font-size: 1.1rem;
+    border: none;
+}
+
+.discord-btn {
+    background-color: #5865F2 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+}
+
+.discord-btn i {
+    margin-right: 0.5rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 195, 255, 0.7);
+}
+
+.discord-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    background-color: #4752c4;
+}

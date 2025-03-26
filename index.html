@@ -1,1 +1,434 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune Scripts - Exécuteur de Scripts Roblox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hero-styles.css">
+    <link rel="stylesheet" href="card-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.2/index.js",
+                "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <header>
+        <div class="logo">
+            <i class="fas fa-bolt logo-icon"></i>
+            <span>Neptune Scripts</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#scripts">Scripts</a></li>
+                <li><a href="#tutoriels">Tutoriels</a></li>
+                <li><a href="#executeur">Exécuteur</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="discord-btn"><i class="fab fa-discord"></i> Discord</button>
+    </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur Neptune Scripts</h1>
+            <p>Des scripts Roblox élégants pour transformer votre expérience de jeu.</p>
+            <button class="cta-button">Rejoindre Discord</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Fonctionnalités Premium</h2>
+            <p>Découvrez ce qui rend notre exécuteur unique</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Anti-Détection</h3>
+                <p>Notre exécuteur est indétectable et constamment mis à jour pour éviter les bans.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Exécution Rapide</h3>
+                <p>Chargement et exécution des scripts en quelques millisecondes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-code"></i></div>
+                <h3>Scripts Exclusifs</h3>
+                <p>Accès à une bibliothèque de scripts premium créés par notre équipe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                <h3>Mises à Jour Régulières</h3>
+                <p>Notre exécuteur est mis à jour chaque semaine avec de nouvelles fonctionnalités.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="scripts" class="scripts">
+        <div class="section-header">
+            <h2>Scripts Populaires</h2>
+            <p>Explorez notre collection de scripts de haute qualité</p>
+        </div>
+        <div class="scripts-container">
+            <div class="script-card">
+                <div class="script-header">
+                    <h3>AimBot Pro</h3>
+                    <span class="tag premium">Premium</span>
+                </div>
+                <p>Visée automatique avancée avec détection à travers les murs et personnalisation complète.</p>
+                <div class="script-footer">
+                    <button class="copy-btn"><i class="fas fa-copy"></i> Copier</button>
+                    <span class="views"><i class="fas fa-eye"></i> 2.4K</span>
+                </div>
+                <div class="script-code hidden">loadstring(game:HttpGet("https://neptunescripts.com/scripts/aimbot.lua"))()</div>
+            </div>
+            <div class="script-card">
+                <div class="script-header">
+                    <h3>ESP Ultimate</h3>
+                    <span class="tag free">Gratuit</span>
+                </div>
+                <p>Visualisation des joueurs à travers les murs avec options de couleur et distance.</p>
+                <div class="script-footer">
+                    <button class="copy-btn"><i class="fas fa-copy"></i> Copier</button>
+                    <span class="views"><i class="fas fa-eye"></i> 3.8K</span>
+                </div>
+                <div class="script-code hidden">loadstring(game:HttpGet("https://neptunescripts.com/scripts/esp.lua"))()</div>
+            </div>
+            <div class="script-card">
+                <div class="script-header">
+                    <h3>Speed Hack</h3>
+                    <span class="tag premium">Premium</span>
+                </div>
+                <p>Modification de la vitesse de déplacement avec contrôle précis et touche de raccourci.</p>
+                <div class="script-footer">
+                    <button class="copy-btn"><i class="fas fa-copy"></i> Copier</button>
+                    <span class="views"><i class="fas fa-eye"></i> 1.9K</span>
+                </div>
+                <div class="script-code hidden">loadstring(game:HttpGet("https://neptunescripts.com/scripts/speed.lua"))()</div>
+            </div>
+        </div>
+        <button class="view-more-btn">Voir plus de scripts <i class="fas fa-arrow-right"></i></button>
+    </section>
+
+    <section id="executor" class="executor">
+        <div class="section-header">
+            <h2>Notre Exécuteur</h2>
+            <p>Puissant, sécurisé et facile à utiliser</p>
+        </div>
+        <div class="executor-preview">
+            <div class="executor-window">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <div class="window-title">Neptune Scripts Executor</div>
+                </div>
+                <div class="editor-container">
+                    <div class="editor-code">
+                        <pre><code class="lua-code">-- Neptune Scripts Premium Executor
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- Configuration
+local config = {
+    aimbot = true,
+    esp = true,
+    speed = 100
+}
+
+-- Initialize features
+function init()
+    print("Neptune Scripts initialized!")
+    if config.aimbot then enableAimbot() end
+    if config.esp then enableESP() end
+    adjustSpeed(config.speed)
+end
+
+init() -- Run the script</code></pre>
+                    </div>
+                </div>
+                <div class="editor-buttons">
+                    <button class="execute-btn">Exécuter</button>
+                    <button class="clear-btn">Effacer</button>
+                    <button class="save-btn">Sauvegarder</button>
+                </div>
+            </div>
+            <div class="executor-features">
+                <h3>Caractéristiques de l'Exécuteur</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Support multi-API (Synapse, KRNL, etc.)</li>
+                    <li><i class="fas fa-check"></i> Interface personnalisable</li>
+                    <li><i class="fas fa-check"></i> Éditeur avec coloration syntaxique</li>
+                    <li><i class="fas fa-check"></i> Bibliothèque de scripts intégrée</li>
+                    <li><i class="fas fa-check"></i> Historique des scripts exécutés</li>
+                </ul>
+                <button class="download-btn">Télécharger <i class="fas fa-download"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>Ce Que Disent Nos Utilisateurs</h2>
+            <p>Des milliers de joueurs nous font confiance</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <p class="testimonial-text">"Le meilleur exécuteur que j'ai jamais utilisé. Rapide, stable et jamais détecté."</p>
+                <div class="testimonial-author">- GameMaster92</div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <p class="testimonial-text">"Les scripts premium sont incroyables, ils fonctionnent sur tous les jeux que j'ai essayés."</p>
+                <div class="testimonial-author">- ProGamer45</div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <p class="testimonial-text">"Le support client est excellent, ils ont résolu mon problème en quelques minutes."</p>
+                <div class="testimonial-author">- RobloxKing</div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <h2>Nos Forfaits</h2>
+            <p>Choisissez l'offre qui vous convient</p>
+        </div>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Basic</h3>
+                    <div class="price">Gratuit</div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Accès à l'exécuteur de base</li>
+                    <li><i class="fas fa-check"></i> Scripts gratuits limités</li>
+                    <li><i class="fas fa-check"></i> Mises à jour mensuelles</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Scripts premium</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Support prioritaire</li>
+                </ul>
+                <button class="pricing-btn">Télécharger</button>
+            </div>
+            <div class="pricing-card popular">
+                <div class="popular-tag">Populaire</div>
+                <div class="pricing-header">
+                    <h3>Premium</h3>
+                    <div class="price">€9.99<span>/mois</span></div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Exécuteur premium complet</li>
+                    <li><i class="fas fa-check"></i> Tous les scripts premium</li>
+                    <li><i class="fas fa-check"></i> Mises à jour hebdomadaires</li>
+                    <li><i class="fas fa-check"></i> Anti-détection avancé</li>
+                    <li><i class="fas fa-check"></i> Support prioritaire 24/7</li>
+                </ul>
+                <button class="pricing-btn">S'abonner</button>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Lifetime</h3>
+                    <div class="price">€79.99<span>/unique</span></div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Tout ce qui est inclus dans Premium</li>
+                    <li><i class="fas fa-check"></i> Accès à vie à tous les futurs scripts</li>
+                    <li><i class="fas fa-check"></i> Rôle VIP sur Discord</li>
+                    <li><i class="fas fa-check"></i> Bêta-tests des nouvelles fonctionnalités</li>
+                    <li><i class="fas fa-check"></i> Assistance personnalisée</li>
+                </ul>
+                <button class="pricing-btn">Acheter à vie</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="section-header">
+            <h2>Questions Fréquentes</h2>
+            <p>Tout ce que vous devez savoir</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>L'exécuteur est-il sûr à utiliser ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Oui, notre exécuteur est conçu avec les plus hauts standards de sécurité. Nous utilisons des techniques anti-détection avancées pour minimiser les risques de ban. Cependant, comme pour tout exécuteur, nous recommandons d'utiliser un compte alternatif.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment installer l'exécuteur ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>L'installation est simple. Téléchargez le fichier d'installation depuis notre site, désactivez temporairement votre antivirus (les exécuteurs sont souvent détectés comme faux positifs), puis suivez les instructions à l'écran. Une fois installé, lancez-le avant de démarrer Roblox.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Pourquoi mon antivirus détecte-t-il l'exécuteur ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Les exécuteurs utilisent des techniques d'injection de code similaires à certains malwares, ce qui déclenche des alertes dans les antivirus. C'est un faux positif. Notre logiciel est sûr et vérifié régulièrement. Vous pouvez ajouter une exception dans votre antivirus ou le désactiver temporairement lors de l'installation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment puis-je obtenir un remboursement ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nous offrons une garantie de remboursement de 14 jours pour tous nos abonnements Premium. Si vous n'êtes pas satisfait, contactez simplement notre support via Discord avec votre preuve d'achat, et nous traiterons votre remboursement dans les 48 heures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Contactez-nous</h2>
+            <p>Besoin d'aide ? Nous sommes là pour vous</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-discord"></i>
+                    <p>Rejoignez notre serveur Discord</p>
+                    <a href="#" class="contact-link">Neptune Scripts</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Envoyez-nous un email</p>
+                    <a href="/cdn-cgi/l/email-protection#32414742425d4046725c574246475c574151405b4246411c515d5f" class="contact-link"><span class="__cf_email__" data-cfemail="8af9fffafae5f8fecae4effafeffe4eff9e9f8e3fafef9a4e9e5e7">[email&#160;protected]</span></a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-telegram"></i>
+                    <p>Suivez-nous sur Telegram</p>
+                    <a href="#" class="contact-link">@NeptuneScripts</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <select id="subject">
+                        <option value="support">Support technique</option>
+                        <option value="billing">Questions de facturation</option>
+                        <option value="feedback">Commentaires</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Votre message"></textarea>
+                </div>
+                <button class="submit-btn">Envoyer <i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <i class="fas fa-bolt logo-icon"></i>
+            <span>Neptune Scripts</span>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Produits</h3>
+                <ul>
+                    <li><a href="#">Exécuteur</a></li>
+                    <li><a href="#">Scripts</a></li>
+                    <li><a href="#">Abonnements</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="#">Tutoriels</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Légal</h3>
+                <ul>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Neptune Scripts. Tous droits réservés.</p>
+            <p class="disclaimer">Neptune Scripts n'est pas affilié à Roblox Corporation.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="script.js"></script>
+    <script src="visibility-fix.js"></script>
+</body>
+</html>
